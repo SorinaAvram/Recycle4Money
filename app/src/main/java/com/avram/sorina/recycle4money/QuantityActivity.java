@@ -15,7 +15,7 @@ public class QuantityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quantity);
 
-       // setContentView(textView);
+       //setContentView(textView);
 
     }
     public void NextMessage1(View view) {
