@@ -38,14 +38,17 @@
         android:layout_alignEnd="@+id/textView"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView">
-
-        <Button
-            android:id="@+id/nButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="100dp"
-            android:text="@string/button_next"
-            android:onClick="Next"/>
-
     </Spinner>
+
+    <Button
+        android:id="@+id/nButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:onClick="NextMessage"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
