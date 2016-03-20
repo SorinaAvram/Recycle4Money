@@ -33,11 +33,12 @@ spinner= (Spinner)findViewById(R.id.spinner);
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
             TextView myText= (TextView) view;
-            Toast.makeText(this,"you selected"+myText.getText(),Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"You selected "+myText.getText(),Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
 }

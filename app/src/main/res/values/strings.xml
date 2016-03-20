@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Recycle4Money</string>
     <string name="action_settings">Settings</string>
- 
+    <string name="button_next"> Next </string>
     <string-array name="recyclable_materials">
         <item> Paper </item>
         <item> Plastic </item>
@@ -9,4 +9,6 @@
         <item> Glass </item>
         <item> Batteries </item>
     </string-array>
+    <string name="title_activity_quantity">QuantityActivity</string>
+
 </resources>
