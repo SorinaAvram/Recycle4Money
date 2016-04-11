@@ -3,6 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="button_next"> Next </string>
     <string name="button_next1"> Next </string>
+    <string name="button_next2"> Next </string>
+    <string name="button_calculate"> Calculate </string>
     <string-array name="recyclable_materials">
         <item> Paper </item>
         <item> Plastic </item>
@@ -10,7 +12,13 @@
         <item> Glass </item>
         <item> Batteries </item>
     </string-array>
+    <string-array name="currency_selector">
+        <item> RON </item>
+        <item> USD </item>
+        <item> EUR </item>
+    </string-array>
     <string name="title_activity_quantity">QuantityActivity</string>
     <string name="title_activity_currency_selector">Currency_selector</string>
+    <string name="title_activity_calculate">Calculate</string>
 
 </resources>
