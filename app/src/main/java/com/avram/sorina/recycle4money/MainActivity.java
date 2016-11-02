@@ -29,24 +29,21 @@ Spinner spinner;
         spinner= (Spinner)findViewById(R.id.spinner);
         ArrayAdapter adapter= ArrayAdapter.createFromResource(this, R.array.recyclable_materials, android.R.layout.simple_spinner_item);
            spinner.setAdapter(adapter);
-           spinner.getSelectedItem().toString();
            spinner.setOnItemSelectedListener(this);
        }
 
     public void NextMessage(View view) {
-
-
-    }
-
-
-
-    @Override
-
-   public void onItemSelected(AdapterView<?> parent, View view, int position, long id)  {
         String item=spinner.getSelectedItem().toString();
         Intent startNewActivity = new Intent(this,QuantityActivity.class);
         startNewActivity.putExtra("item", item);
         startActivity(startNewActivity);
+
+    }
+
+    @Override
+
+   public void onItemSelected(AdapterView<?> parent, View view, int position, long id)  {
+
 
             TextView myText= (TextView) view;
             Toast.makeText(this,"You Selected "+myText.getText(),Toast.LENGTH_SHORT).show();

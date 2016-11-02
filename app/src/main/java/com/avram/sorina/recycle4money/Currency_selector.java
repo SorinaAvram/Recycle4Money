@@ -17,7 +17,7 @@ public class Currency_selector extends Activity implements AdapterView.OnItemSel
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_currency_selector);
+        setContentView(R.layout.content_currency_selector);
 
 
         spinner = (Spinner) findViewById(R.id.spinner);
