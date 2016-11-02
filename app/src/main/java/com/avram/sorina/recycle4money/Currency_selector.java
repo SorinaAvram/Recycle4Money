@@ -12,7 +12,8 @@ import android.widget.Toast;
 
 public class Currency_selector extends Activity implements AdapterView.OnItemSelectedListener {
 
-    Spinner spinner;
+    Spinner spinner_country;
+    Spinner currency_selector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +21,17 @@ public class Currency_selector extends Activity implements AdapterView.OnItemSel
         setContentView(R.layout.content_currency_selector);
 
 
-        spinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.currency_selector, android.R.layout.simple_spinner_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
+        spinner_country = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.spinner_country, android.R.layout.simple_spinner_item);
+        spinner_country.setAdapter(adapter);
+        spinner_country.setOnItemSelectedListener(this);
+
+        currency_selector = (Spinner) findViewById(R.id.currency_selector);
+        ArrayAdapter adapter1 = ArrayAdapter.createFromResource(this, R.array.currency_selector, android.R.layout.simple_spinner_item);
+        currency_selector.setAdapter(adapter1);
+        currency_selector.setOnItemSelectedListener(this);
     }
+
 
     Intent startNewActivity = new Intent(this, Calculate.class);
 
